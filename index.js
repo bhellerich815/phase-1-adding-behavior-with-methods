@@ -25,13 +25,18 @@ class Bird {
     this.name = name;
     this.sex = sex;
     }
-    speak(male){
-        return `It's me! ${this.name}, the parrot!`
-    }
-    speak(bird2){
-        return `${this.name} says squawk!`
-    }
+    // speak(){
+    //     return `It's me! ${this.name}, the parrot!`
+    // }
+    // speak(bird2){
+    //     return `${this.name} says squawk!`
+    // }
+   speak(){
+       if(this.sex === 'male'){
+           return `It's me! ${this.name}, the parrot!`
+       } else {
+           return `${this.name} says squawk!`
+       }
+   }
 }
 
-let bird = new Bird("Pablo", "male")
-let bird2 = new Bird("Mable", "female")
